@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="qYPrd4WWJ9YflVTPJIiZS-z0BSl6a3gqZODWd_L8IqE" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Yashvant Giri | AI Engineer</title>
+    <!-- Google Search -->
+    <title>Yashvant Giri | AI/ML Engineer from Siddharth Nagar</title>
 
     <meta name="description"
-          content="Yashvant Giri is an AI Engineer from Siddharth Nagar, Uttar Pradesh, interested in Artificial Intelligence, Machine Learning, technology and community awareness activities.">
+        content="Yashvant Giri is an AI/ML Engineer and MCA student from Siddharth Nagar, Uttar Pradesh. He is interested in Artificial Intelligence, Machine Learning, Generative AI and technology, and participates in student and community awareness activities.">
 
     <meta name="author" content="Yashvant Giri">
 
+    <meta name="keywords"
+        content="Yashvant Giri, Yashvant Giri Siddharth Nagar, Yashvant Giri AI Engineer, Yashvant Giri AI ML, AI ML Engineer Siddharth Nagar, MCA Student, Uttar Pradesh">
+
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification"
+        content="qYPrd4WWJ9YflVTPJIiZS-z0BSl6a3gqZODWd_L8IqE">
+
+    <!-- Social sharing -->
+    <meta property="og:title"
+        content="Yashvant Giri | AI/ML Engineer">
+
+    <meta property="og:description"
+        content="AI/ML Engineer and MCA student from Siddharth Nagar, Uttar Pradesh, interested in AI, Machine Learning, Generative AI and community awareness.">
+
+    <meta property="og:image"
+        content="yashvant-giri.jpg">
+
+    <meta property="og:type" content="profile">
+
+    <!-- Person structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yashvant Giri",
+      "jobTitle": "AI/ML Engineer",
+      "description": "AI/ML Engineer and MCA student from Siddharth Nagar, Uttar Pradesh, interested in Artificial Intelligence, Machine Learning, Generative AI and technology.",
+      "image": "yashvant-giri.jpg",
+      "url": "https://yash7080192.github.io/",
+      "sameAs": [
+        "https://www.linkedin.com/in/yashvant-giri-686973383/",
+        "https://github.com/YASH7080192"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Siddharth Nagar",
+        "addressRegion": "Uttar Pradesh",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -21,26 +64,27 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             background: #f5f7fb;
             color: #172033;
             line-height: 1.7;
         }
 
         header {
-            background: #111827;
+            background: #0f172a;
             color: white;
-            padding: 20px 8%;
+            padding: 18px 7%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.15);
         }
 
         header h2 {
-            color: #ffffff;
+            font-size: 22px;
         }
 
         nav a {
@@ -55,187 +99,300 @@
         }
 
         .hero {
-            min-height: 90vh;
+            min-height: 92vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+            padding: 70px 8%;
+            background: linear-gradient(135deg, #dbeafe, #f8fafc);
         }
 
-        .hero-content {
-            max-width: 850px;
+        .hero-container {
+            max-width: 1100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
         }
 
-        .hero h1 {
-            font-size: 55px;
-            margin-bottom: 10px;
-            color: #111827;
+        .hero-text {
+            flex: 1;
         }
 
-        .hero h3 {
-            font-size: 25px;
+        .hero-text h1 {
+            font-size: 58px;
+            color: #0f172a;
+            margin-bottom: 5px;
+        }
+
+        .hero-text h3 {
+            font-size: 27px;
             color: #2563eb;
+            margin-bottom: 18px;
+        }
+
+        .location {
+            color: #475569;
+            font-size: 17px;
             margin-bottom: 20px;
         }
 
-        .hero p {
+        .hero-text p {
             font-size: 18px;
-            color: #4b5563;
-            max-width: 700px;
-            margin: auto;
+            color: #475569;
+            max-width: 680px;
+        }
+
+        .profile-photo {
+            width: 270px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 7px solid white;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.18);
         }
 
         .buttons {
-            margin-top: 30px;
+            margin-top: 28px;
         }
 
         .btn {
             display: inline-block;
             padding: 12px 24px;
-            margin: 8px;
+            margin-right: 10px;
+            margin-bottom: 10px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
             background: #2563eb;
             color: white;
+            transition: 0.3s;
         }
 
         .btn:hover {
+            transform: translateY(-2px);
             background: #1d4ed8;
         }
 
-        .btn.secondary {
-            background: #111827;
+        .btn.dark {
+            background: #0f172a;
         }
 
         section {
-            padding: 70px 8%;
             max-width: 1100px;
             margin: auto;
+            padding: 75px 8%;
         }
 
         section h2 {
             text-align: center;
-            font-size: 32px;
+            font-size: 34px;
+            color: #0f172a;
             margin-bottom: 35px;
-            color: #111827;
         }
 
         .about {
             text-align: center;
+            max-width: 900px;
+            margin: auto;
             font-size: 18px;
-            color: #4b5563;
+            color: #475569;
         }
 
         .cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 20px;
+            gap: 22px;
         }
 
         .card {
             background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
         }
 
         .card h3 {
-            margin-bottom: 10px;
             color: #2563eb;
+            margin-bottom: 10px;
+            font-size: 21px;
         }
 
         .card p {
-            color: #4b5563;
+            color: #64748b;
+        }
+
+        .timeline {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .timeline-item {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 5px solid #2563eb;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+        }
+
+        .timeline-item h3 {
+            color: #0f172a;
+            margin-bottom: 8px;
         }
 
         .contact {
-            text-align: center;
-            background: #111827;
-            color: white;
             max-width: none;
+            text-align: center;
+            background: #0f172a;
+            color: white;
         }
 
         .contact h2 {
             color: white;
         }
 
-        .contact a {
-            color: #60a5fa;
+        .contact p {
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .social-links {
+            margin-top: 25px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 8px;
+            padding: 11px 20px;
+            border: 1px solid #475569;
+            border-radius: 8px;
+            color: white;
             text-decoration: none;
+        }
+
+        .social-links a:hover {
+            background: #2563eb;
+            border-color: #2563eb;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
-            background: #0b1120;
-            color: #cbd5e1;
+            padding: 22px;
+            background: #020617;
+            color: #94a3b8;
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 800px) {
+
             header {
                 flex-direction: column;
-                gap: 10px;
+                gap: 12px;
             }
 
             nav a {
                 margin: 5px;
             }
 
-            .hero h1 {
-                font-size: 40px;
+            .hero-container {
+                flex-direction: column-reverse;
+                text-align: center;
             }
 
-            .hero h3 {
-                font-size: 21px;
+            .hero-text h1 {
+                font-size: 42px;
+            }
+
+            .hero-text h3 {
+                font-size: 23px;
+            }
+
+            .profile-photo {
+                width: 220px;
+                height: 220px;
+            }
+
+            .buttons {
+                text-align: center;
             }
         }
+
     </style>
 </head>
 
 <body>
 
+<!-- NAVIGATION -->
+
 <header>
+
     <h2>Yashvant Giri</h2>
 
     <nav>
         <a href="#about">About</a>
         <a href="#activities">Activities</a>
         <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
+
 </header>
+
+
+<!-- HERO -->
 
 <section class="hero">
 
-    <div class="hero-content">
+    <div class="hero-container">
 
-        <h1>Yashvant Giri</h1>
+        <div class="hero-text">
 
-        <h3>AI Engineer</h3>
+            <h1>Yashvant Giri</h1>
 
-        <p>
-            MCA student and AI Engineer from Siddharth Nagar, Uttar Pradesh,
-            passionate about Artificial Intelligence, Machine Learning,
-            technology and helping students and communities through
-            awareness and learning.
-        </p>
+            <h3>AI/ML Engineer</h3>
 
-        <div class="buttons">
+            <div class="location">
+                📍 Siddharth Nagar, Uttar Pradesh, India
+            </div>
 
-            <a class="btn"
-               href="https://github.com/YASH7080192"
-               target="_blank">
-                GitHub
-            </a>
+            <p>
+                AI/ML Engineer and MCA student interested in
+                Artificial Intelligence, Machine Learning,
+                Generative AI, software development and technology.
+            </p>
 
-            <a class="btn secondary"
-               href="https://www.linkedin.com/"
-               target="_blank">
-                LinkedIn
-            </a>
+            <div class="buttons">
+
+                <a class="btn"
+                   href="https://www.linkedin.com/in/yashvant-giri-686973383/"
+                   target="_blank">
+                    LinkedIn
+                </a>
+
+                <a class="btn dark"
+                   href="https://github.com/YASH7080192"
+                   target="_blank">
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <img
+                src="yashvant-giri.jpg"
+                alt="Yashvant Giri - AI/ML Engineer from Siddharth Nagar"
+                class="profile-photo"
+            >
 
         </div>
 
@@ -243,25 +400,42 @@
 
 </section>
 
+
+<!-- ABOUT -->
+
 <section id="about">
 
-    <h2>About Me</h2>
+    <h2>About Yashvant Giri</h2>
 
     <p class="about">
-        I am Yashvant Giri, an AI Engineer and MCA student from
-        Siddharth Nagar, Uttar Pradesh. I am interested in Artificial
-        Intelligence, Machine Learning, software development and
-        emerging technologies.
+
+        Yashvant Giri is an AI/ML Engineer and MCA student
+        from Siddharth Nagar, Uttar Pradesh. He is interested
+        in Artificial Intelligence, Machine Learning,
+        Generative AI, software development and emerging
+        technologies.
 
         <br><br>
 
-        Along with technology, I have participated in awareness and
-        educational activities where I have interacted with students
-        and members of the public on topics such as cyber-crime
-        awareness, yoga and life management.
+        Alongside technology, Yashvant has participated in
+        educational, awareness and community-oriented
+        activities. He has interacted with students and
+        community members through discussions and awareness
+        programmes related to cybercrime awareness, digital
+        safety, yoga, life management and personal development.
+
+        <br><br>
+
+        His goal is to continue learning technology while
+        using his knowledge and experience to contribute
+        positively to students and communities.
+        
     </p>
 
 </section>
+
+
+<!-- COMMUNITY ACTIVITIES -->
 
 <section id="activities">
 
@@ -270,42 +444,129 @@
     <div class="cards">
 
         <div class="card">
-            <h3>Cyber Crime Awareness</h3>
+
+            <h3>🛡️ Cybercrime Awareness</h3>
+
             <p>
-                Participated in awareness activities focused on
-                cyber-crime, digital safety and responsible use of
-                technology.
+                Participated in awareness programmes and
+                discussions related to cybercrime, digital
+                safety and responsible use of technology.
             </p>
+
         </div>
 
-        <div class="card">
-            <h3>Student Guidance</h3>
-            <p>
-                Interacted with students in educational institutions
-                and shared learning, motivation and life-management
-                related guidance.
-            </p>
-        </div>
 
         <div class="card">
-            <h3>Yoga & Well-being</h3>
+
+            <h3>🎓 Student Guidance</h3>
+
+            <p>
+                Interacted with students in schools and colleges,
+                sharing guidance related to education, life skills,
+                personal development and life management.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>🧘 Yoga & Well-being</h3>
+
             <p>
                 Participated in activities promoting yoga,
-                discipline and healthy living.
+                discipline, healthy living and balanced
+                personal development.
             </p>
+
         </div>
 
+
         <div class="card">
-            <h3>Community Engagement</h3>
+
+            <h3>🤝 Community Engagement</h3>
+
             <p>
-                Engaged with people through public awareness,
-                educational and community-oriented activities.
+                Participated in public and community-oriented
+                activities focused on awareness, learning,
+                guidance and helping people.
             </p>
+
         </div>
 
     </div>
 
 </section>
+
+
+<!-- CHHATTISGARH / AWARENESS -->
+
+<section>
+
+    <h2>Awareness & Social Activities</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <h3>Community Awareness Programmes</h3>
+
+            <p>
+                Participated in awareness activities at different
+                places in Chhattisgarh, interacting with people
+                and discussing topics including cybercrime awareness,
+                life management and responsible living.
+            </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <h3>School & College Interactions</h3>
+
+            <p>
+                Interacted with students in educational institutions
+                and shared practical guidance related to education,
+                personal development and life skills.
+            </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <h3>Social & Volunteer Activities</h3>
+
+            <p>
+                Has participated in community-oriented and
+                volunteer activities, including involvement
+                associated with NSS and other educational and
+                social initiatives.
+            </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <h3>Gayatri Parivar Activities</h3>
+
+            <p>
+                Has participated in activities associated with
+                Gayatri Parivar and community awareness initiatives,
+                contributing through learning, awareness and
+                interaction with people.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS -->
 
 <section id="skills">
 
@@ -314,80 +575,201 @@
     <div class="cards">
 
         <div class="card">
+
             <h3>Artificial Intelligence</h3>
-            <p>AI, Generative AI and AI-based applications.</p>
+
+            <p>
+                Artificial Intelligence, AI applications,
+                Generative AI and intelligent systems.
+            </p>
+
         </div>
 
+
         <div class="card">
+
             <h3>Machine Learning</h3>
-            <p>Machine Learning concepts, data analysis and models.</p>
+
+            <p>
+                Machine Learning concepts, data analysis,
+                model development and experimentation.
+            </p>
+
         </div>
 
+
         <div class="card">
+
+            <h3>Generative AI</h3>
+
+            <p>
+                Large Language Models, AI assistants,
+                prompt engineering and Generative AI concepts.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
             <h3>Web Development</h3>
-            <p>Frontend and backend web development.</p>
+
+            <p>
+                Frontend and backend web development,
+                modern web technologies and APIs.
+            </p>
+
         </div>
 
+
         <div class="card">
+
             <h3>Programming</h3>
-            <p>Python, Java, JavaScript and problem solving.</p>
+
+            <p>
+                Python, Java, JavaScript and
+                problem-solving.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Git & GitHub</h3>
+
+            <p>
+                Version control, repositories,
+                project collaboration and deployment.
+            </p>
+
         </div>
 
     </div>
 
 </section>
 
-<section>
+
+<!-- EDUCATION -->
+
+<section id="education">
 
     <h2>Education</h2>
 
     <div class="cards">
 
         <div class="card">
+
             <h3>Master of Computer Applications</h3>
+
             <p>
-                MCA with specialization/interest in Artificial
-                Intelligence and Machine Learning.
+                MCA with focus and specialization in
+                Artificial Intelligence and Machine Learning.
             </p>
+
         </div>
 
+
         <div class="card">
+
             <h3>Bachelor of Computer Applications</h3>
+
             <p>
-                BCA graduate with a foundation in computer science,
-                programming and software development.
+                BCA graduate with a foundation in
+                computer applications, programming,
+                software development and technology.
             </p>
+
         </div>
 
     </div>
 
 </section>
 
-<section id="contact" class="contact">
 
-    <h2>Connect With Me</h2>
+<!-- PROJECTS -->
 
-    <p>
-        Explore my projects and professional journey online.
-    </p>
+<section id="projects">
 
-    <br>
+    <h2>Projects & Technology</h2>
 
-    <a href="https://github.com/YASH7080192" target="_blank">
-        GitHub
-    </a>
+    <div class="cards">
 
-    <br><br>
+        <div class="card">
 
-    <a href="https://www.linkedin.com/" target="_blank">
-        LinkedIn
-    </a>
+            <h3>AI Interview Platform</h3>
+
+            <p>
+                AI-powered interview preparation platform
+                involving resume analysis, job-description
+                analysis, skill-gap analysis and AI-generated
+                interview questions.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Web Development Projects</h3>
+
+            <p>
+                Development of web applications using modern
+                frontend and backend technologies.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Machine Learning Projects</h3>
+
+            <p>
+                Worked with datasets, machine learning models,
+                data preprocessing and analytical techniques.
+            </p>
+
+        </div>
+
+    </div>
 
 </section>
 
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+    <h2>Connect With Yashvant Giri</h2>
+
+    <p>
+        Explore my professional profile, projects and
+        technology journey.
+    </p>
+
+    <div class="social-links">
+
+        <a href="https://www.linkedin.com/in/yashvant-giri-686973383/"
+           target="_blank">
+            LinkedIn
+        </a>
+
+        <a href="https://github.com/YASH7080192"
+           target="_blank">
+            GitHub
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
 <footer>
 
-    © 2026 Yashvant Giri. All Rights Reserved.
+    © 2026 Yashvant Giri | AI/ML Engineer | Siddharth Nagar, Uttar Pradesh
 
 </footer>
 
